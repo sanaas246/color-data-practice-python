@@ -43,10 +43,15 @@ def letsearch():
     letnum = 0
     whichlet = input("What letter would you like to search for?")
     for color in color_data:
-        letters = list(color["name"])
-        if whichlet in letters[0]:
+        if whichlet == color["name"][0]:
             letnum += 1
             print(color["name"])
     print(letnum)
 
-letsearch()
+
+# Extra 
+# for color in color_data:
+#     color["name"] = color["name"].upper()
+
+# for color in color_data:
+#     print(color["name"])
